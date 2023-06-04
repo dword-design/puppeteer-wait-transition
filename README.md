@@ -1,22 +1,27 @@
 <!-- TITLE/ -->
-# puppeteer-wait-transition
+# puppeteer-wait-for-transition
 <!-- /TITLE -->
 
 <!-- BADGES/ -->
   <p>
-    <img src="https://img.shields.io/badge/os-linux%20%7C%C2%A0macos%20%7C%C2%A0windows-blue" alt="Linux macOS Windows compatible"><a href="https://github.com/dword-design/puppeteer-wait-transition/actions">
+    <a href="https://npmjs.org/package/puppeteer-wait-for-transition">
       <img
-        src="https://github.com/dword-design/puppeteer-wait-transition/workflows/build/badge.svg"
+        src="https://img.shields.io/npm/v/puppeteer-wait-for-transition.svg"
+        alt="npm version"
+      >
+    </a><img src="https://img.shields.io/badge/os-linux%20%7C%C2%A0macos%20%7C%C2%A0windows-blue" alt="Linux macOS Windows compatible"><a href="https://github.com/dword-design/puppeteer-wait-for-transition/actions">
+      <img
+        src="https://github.com/dword-design/puppeteer-wait-for-transition/workflows/build/badge.svg"
         alt="Build status"
       >
-    </a><a href="https://codecov.io/gh/dword-design/puppeteer-wait-transition">
+    </a><a href="https://codecov.io/gh/dword-design/puppeteer-wait-for-transition">
       <img
-        src="https://codecov.io/gh/dword-design/puppeteer-wait-transition/branch/master/graph/badge.svg"
+        src="https://codecov.io/gh/dword-design/puppeteer-wait-for-transition/branch/master/graph/badge.svg"
         alt="Coverage status"
       >
-    </a><a href="https://david-dm.org/dword-design/puppeteer-wait-transition">
-      <img src="https://img.shields.io/david/dword-design/puppeteer-wait-transition" alt="Dependency status">
-    </a><img src="https://img.shields.io/badge/renovate-enabled-brightgreen" alt="Renovate enabled"><br/><a href="https://gitpod.io/#https://github.com/dword-design/puppeteer-wait-transition">
+    </a><a href="https://david-dm.org/dword-design/puppeteer-wait-for-transition">
+      <img src="https://img.shields.io/david/dword-design/puppeteer-wait-for-transition" alt="Dependency status">
+    </a><img src="https://img.shields.io/badge/renovate-enabled-brightgreen" alt="Renovate enabled"><br/><a href="https://gitpod.io/#https://github.com/dword-design/puppeteer-wait-for-transition">
       <img
         src="https://gitpod.io/button/open-in-gitpod.svg"
         alt="Open in Gitpod"
@@ -76,17 +81,17 @@ expect(await page.screenshot()).toMatchImageSnapshot
 
 ```bash
 # npm
-$ npm install puppeteer-wait-transition
+$ npm install puppeteer-wait-for-transition
 
 # Yarn
-$ yarn add puppeteer-wait-transition
+$ yarn add puppeteer-wait-for-transition
 ```
 <!-- /INSTALL -->
 
 <!-- LICENSE/ -->
 ## Contribute
 
-Are you missing something or want to contribute? Feel free to file an [issue](https://github.com/dword-design/puppeteer-wait-transition/issues) or a [pull request](https://github.com/dword-design/puppeteer-wait-transition/pulls)! ⚙️
+Are you missing something or want to contribute? Feel free to file an [issue](https://github.com/dword-design/puppeteer-wait-for-transition/issues) or a [pull request](https://github.com/dword-design/puppeteer-wait-for-transition/pulls)! ⚙️
 
 ## Support
 
