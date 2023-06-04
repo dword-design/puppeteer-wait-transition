@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/dword-design/puppeteer-wait-for-transition/compare/v1.0.0...v1.0.1) (2023-06-04)
+
+
+### Bug Fixes
+
+* foo ([1f54f42](https://github.com/dword-design/puppeteer-wait-for-transition/commit/1f54f420992ba868611dee1a008614717b4338ae))
+
 # 1.0.0 (2023-06-04)
 
 

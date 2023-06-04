@@ -1,6 +1,6 @@
 {
   "name": "puppeteer-wait-for-transition",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Waits until a transition has finished for a Puppeteer element.",
   "keywords": [
     "animation",
