@@ -1,0 +1,38 @@
+{
+  "name": "@dword-design/puppeteer-wait-transition",
+  "version": "1.0.0",
+  "description": "Waits until a transition has finished for a Puppeteer element",
+  "repository": "dword-design/puppeteer-wait-transition",
+  "funding": "https://github.com/sponsors/dword-design",
+  "license": "MIT",
+  "author": "Sebastian Landwehr <info@sebastianlandwehr.com>",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "checkUnknownFiles": "base checkUnknownFiles",
+    "commit": "base commit",
+    "depcheck": "base depcheck",
+    "dev": "base dev",
+    "lint": "base lint",
+    "prepare": "base prepare",
+    "prepublishOnly": "base prepublishOnly",
+    "test": "base test"
+  },
+  "devDependencies": {
+    "@dword-design/base": "^10.0.3",
+    "@dword-design/puppeteer": "^6.0.10",
+    "@dword-design/tester": "^2.0.19",
+    "@dword-design/tester-plugin-puppeteer": "^2.1.68",
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
