@@ -1,7 +1,12 @@
 {
-  "name": "@dword-design/puppeteer-wait-transition",
+  "name": "puppeteer-wait-transition",
   "version": "1.0.0",
-  "description": "Waits until a transition has finished for a Puppeteer element",
+  "description": "Waits until a transition has finished for a Puppeteer element.",
+  "private": true,
+  "keywords": [
+    "animation",
+    "handle"
+  ],
   "repository": "dword-design/puppeteer-wait-transition",
   "funding": "https://github.com/sponsors/dword-design",
   "license": "MIT",

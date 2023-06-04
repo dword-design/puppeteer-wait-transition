@@ -9,18 +9,21 @@ export default tester(
     async works() {
       const server = express()
         .get('/', (req, res) =>
-          res.send('<button style="transition: 100ms all; opacity: 1" />'),
+          res.send(
+            '<button style="transition: 500ms opacity; opacity: 1" onclick="this.style.opacity = 0" />',
+          ),
         )
         .listen(3000)
       try {
         await this.page.goto('http://localhost:3000')
 
         const button = await this.page.waitForSelector('button')
-        expect(await button.evaluate(el => el.style.opacity)).toEqual(1)
+        expect(await button.evaluate(el => el.style.opacity)).toEqual('1')
+        await button.click()
         await self(button)
-        expect(await button.evaluate(el => el.style.opacity)).toEqual(0)
+        expect(await button.evaluate(el => el.style.opacity)).toEqual('0')
       } finally {
-        console.log(server.close())
+        server.close()
       }
     },
   },

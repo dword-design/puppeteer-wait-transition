@@ -1,12 +1,12 @@
 <!-- TITLE/ -->
-# @dword-design/puppeteer-wait-transition
+# puppeteer-wait-transition
 <!-- /TITLE -->
 
 <!-- BADGES/ -->
   <p>
-    <a href="https://npmjs.org/package/@dword-design/puppeteer-wait-transition">
+    <a href="https://npmjs.org/package/puppeteer-wait-transition">
       <img
-        src="https://img.shields.io/npm/v/@dword-design/puppeteer-wait-transition.svg"
+        src="https://img.shields.io/npm/v/puppeteer-wait-transition.svg"
         alt="npm version"
       >
     </a><img src="https://img.shields.io/badge/os-linux%20%7C%C2%A0macos%20%7C%C2%A0windows-blue" alt="Linux macOS Windows compatible"><a href="https://github.com/dword-design/puppeteer-wait-transition/actions">
@@ -50,18 +50,41 @@
 <!-- /BADGES -->
 
 <!-- DESCRIPTION/ -->
-Waits until a transition has finished for a Puppeteer element
+Waits until a transition has finished for a Puppeteer element.
 <!-- /DESCRIPTION -->
 
+## Usage
+
+```js
+import puppeteer from 'puppeteer'
+import waitTransition from 'puppeteer-wait-transition'
+
+const browser = await puppeteer.launch()
+const page = await browser.newPage()
+
+// ...
+
+const button = await modal.$('.open-button')
+await button.click()
+
+const modal = await page.waitForSelector('.modal')
+
+// Wait for the fade in transition to end
+await waitTransition(modal)
+
+// E.g. take a screenshot of the modal
+
+expect(await page.screenshot()).toMatchImageSnapshot
+```
 <!-- INSTALL/ -->
 ## Install
 
 ```bash
 # npm
-$ npm install @dword-design/puppeteer-wait-transition
+$ npm install puppeteer-wait-transition
 
 # Yarn
-$ yarn add @dword-design/puppeteer-wait-transition
+$ yarn add puppeteer-wait-transition
 ```
 <!-- /INSTALL -->
 
